@@ -65,6 +65,7 @@ function artcraft_scripts() {
 	wp_enqueue_style( 'artcraft-font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' );
 	wp_enqueue_style( 'artcraft-libs', get_template_directory_uri() . '/css/libs.min.css' );
 	wp_enqueue_style( 'artcraft-style', get_template_directory_uri() . '/css/styles.min.css' );
+	wp_enqueue_style( 'artcraft-main', get_template_directory_uri() . '/css/main.css' );
     // для внешних стилей
 
     /*
@@ -77,12 +78,13 @@ function artcraft_scripts() {
      * 5) подключение в футере (true = да, false = нет)
      */
 	wp_enqueue_script( 'artcraft-jquery', get_template_directory_uri() . '/js/jquery-3.2.1.js', [], '', true );
-	wp_enqueue_script( 'artcraft-common', get_template_directory_uri() . '/js/common.js', [], '', true );
+
 	wp_enqueue_script( 'artcraft-validation', get_template_directory_uri() . '/js/validation.js', [], '', true );
 	wp_enqueue_script( 'artcraft-flex-slider', get_template_directory_uri() . '/js/jquery.flexslider-min.js', [], '', true );
 	wp_enqueue_script( 'artcraft-owl-carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', [], '', true );
-
+	wp_enqueue_script( 'artcraft-common', get_template_directory_uri() . '/js/common.js', [], '', true );
 	wp_enqueue_script( 'artcraft-script', get_template_directory_uri() . '/js/script.min.js', [], '', true );
+	wp_enqueue_script( 'artcraft-common', get_template_directory_uri() . '/js/common.js', [], '', true );
 
     /*
      * Добавляем возможность отправлять AJAX-запросы к скриптам

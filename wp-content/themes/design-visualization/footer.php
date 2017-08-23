@@ -9,6 +9,16 @@
  * @package artcraft
  */
 ?>
+<div id="modal" class="modal_div"> <!-- скрытый див с уникaльным id = modal1 -->
+    <span class="modal_close">X</span>
+    <form action="#">
+        <h1>Заполните форму</h1>
+        <input id="v_name4" name="v_name4" type="text" class="vItem4" placeholder="Ваше имя" required>
+        <input id="v_phone4" name="v_phone4" type="text" class="vItem4" placeholder="Телефон" required>
+        <input id="subm4" type="submit" value="Отправить">
+    </form>
+</div>
+<div id="overlay"></div><!-- Пoдлoжкa, oднa нa всю стрaницу -->
 <footer class="footer">
     <div class="container">
         <a href="#" class="footer__logo">
@@ -19,7 +29,6 @@
             <li><a href="#portfolio">Портфолио</a></li>
             <li><a href="#services">Наши услуги</a></li>
             <li><a href="#about">О нас</a></li>
-            <li><a href="#notice">FAQ</a></li>
         </ul>
     </div>
 </footer>

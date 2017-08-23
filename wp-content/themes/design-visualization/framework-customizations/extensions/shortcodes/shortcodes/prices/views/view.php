@@ -24,7 +24,7 @@
                     <div class="prices__block--bottom">
 	                    <?= $att['services'];?>
                         <h2> <?= $att['price'];?></h2>
-                        <a href="#consult">Заказать дизайн</a>
+                        <a href="#modal" class="open_modal">Заказать дизайн</a>
                     </div>
                 </div>
             <?php endforeach; ?>
